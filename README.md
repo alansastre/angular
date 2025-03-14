@@ -1,68 +1,59 @@
+# Angular
 
-## 1. Nodejs
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
 
-https://nodejs.org/en
+## Development server
 
-* `node --version`
+To start a local development server, run:
 
-## 2. Visual Studio Code IDE
-
-https://code.visualstudio.com/
-
-Extensiones:
-
-* vscode-icons
-* Angular Essentials
-* Angular Language Service
-
-## 3. Instalar Angular
-
-https://angular.io/guide/versions
-
-npm install -g @angular/cli@latest
-
-ng version
-
-## 4. Crear proyecto Angular
-
-ng new frontend --routing=true --skip-git --style=css
-
+```bash
 ng serve
+```
 
-`Ctrl + C` permite parar la aplicación.
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## 5. Crear modelo, componentes y servicio
+## Code scaffolding
 
-ng generate component book-list
-ng generate component book-detail
-ng generate component book-form
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-ng generate interface models/book --type=model --prefix=I
-ng generate service services/book
+```bash
+ng generate component component-name
+```
 
-## 6. Enrutado
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-app-routing.module.ts
+```bash
+ng generate --help
+```
 
-## 7. Angular Material
+## Building
 
-https://material.angular.io/
+To build the project run:
 
-https://fonts.google.com/icons
+```bash
+ng build
+```
 
-ng add @angular/material
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-Importar los siguientes módulos en app.module.ts:
+## Running unit tests
 
-MatTableModule,
-MatIconModule,
-MatButtonModule,
-MatGridListModule,
-MatCardModule,
-MatDividerModule,
-MatToolbarModule
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-Hacer el listado de libros book-list y el detalle de un libro book-detail.
+```bash
+ng test
+```
 
-ng generate component layout/navbar
-ng generate component layout/footer
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
